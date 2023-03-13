@@ -1,1 +1,18 @@
-print(hello)
+# Basic Libraries
+import numpy as np
+import pandas as pd
+import seaborn as sb
+import matplotlib.pyplot as plt # we only need pyplot
+sb.set() # set the default Seaborn style for graphics
+
+osiData = pd.read_csv('online_shoppers_intention (1).csv')
+osiData.head()
+
+TimeSpent = pd.DataFrame(osiData[["Administrative", "Administrative_Duration","Informational", "Informational_Duration", "ProductRelated", "ProductRelated_Duration", "BounceRates","ExitRates" ]])
+TimeSpent.head()
+
+TimePeriod =  pd.DataFrame(osiData[["SpecialDay", "Month", "Weekend"]])
+TimePeriod.head()
+
+VisitorAttributes =  pd.DataFrame(osiData[["OperatingSystems", "Browser", "Region", "TrafficType", "VisitorType"]])
+VisitorAttributes.head()
