@@ -55,7 +55,7 @@ BounceRates.describe()
 IQR = 0.010526-0.003118
 BounceRates_filtered =BounceRates[(BounceRates>=0.010526-(1.5*IQR)) & (BounceRates <= 0.003118+(1.5*IQR))]
 
-#Boxplot for BounceRatesd_filtered
+#Boxplot for BounceRates_filtered
 f = plt.figure(figsize=(24, 4))
 sb.boxplot(data = BounceRates_filtered, orient = "h")
 
