@@ -5,14 +5,60 @@ import seaborn as sb
 import matplotlib.pyplot as plt # we only need pyplot
 sb.set() # set the default Seaborn style for graphics
 
+#Import csv file for online shoppers intention
 osiData = pd.read_csv('online_shoppers_intention (1).csv')
+
+#Converting revenue variable into 0 and 1
+osiData["Revenue"] = osiData["Revenue"].astype(int)
 osiData.head()
 
-TimeSpent = pd.DataFrame(osiData[["Administrative", "Administrative_Duration","Informational", "Informational_Duration", "ProductRelated", "ProductRelated_Duration", "BounceRates","ExitRates" ]])
-TimeSpent.head()
+#Creating TimeSpent Dataframe and dropping all 0s
+TimeSpent = pd.DataFrame(osiData[[ "Administrative_Duration", "Informational_Duration", "ProductRelated_Duration", "BounceRates", "Revenue" ]])
+TimeSpent.info()
 
-TimePeriod =  pd.DataFrame(osiData[["SpecialDay", "Month", "Weekend"]])
-TimePeriod.head()
+TimeSpent = TimeSpent[(TimeSpent != 0).all(axis=1)]
+TimeSpent.info()
 
-VisitorAttributes =  pd.DataFrame(osiData[["OperatingSystems", "Browser", "Region", "TrafficType", "VisitorType"]])
-VisitorAttributes.head()
+#Converting revenue(categorical variable) to numerical
+TimeSpent["Revenue"] = TimeSpent["Revenue"].astype(int)
+
+#Dropping Outliers for Administrative_Duration
+Administrative_Duration = pd.DataFrame(TimeSpent[[ "Administrative_Duration"]])
+Administrative_Duration.describe()
+AD_filtered = Administrative_Duration[(Administrative_Duration >= 294.847619-(1.5*IQR)) & (Administrative_Duration <= 75.300000+(1.5*IQR))]
+
+#Boxplot of AD_filtered
+f = plt.figure(figsize=(24, 4))
+sb.boxplot(data = AD_filtered, orient = "h")
+
+#Dropping Outliers for Informational_Duration
+Informational_Duration= pd.DataFrame(TimeSpent[[ "Informational_Duration"]])
+Informational_Duration.describe()
+IQR = 275.0-38.250
+ID_filtered =Informational_Duration[(Informational_Duration>=275.0-(1.5*IQR)) & (Informational_Duration <= 38.250+(1.5*IQR))]
+
+#Box plot for ID_filtered
+f = plt.figure(figsize=(24, 4))
+sb.boxplot(data = ID_filtered, orient = "h")
+
+#Dropping outliers for ProductRelated_Duration
+ProductRelated_Duration = pd.DataFrame(TimeSpent[[ "ProductRelated_Duration"]])
+ProductRelated_Duration.describe()
+IQR = 5333.509569-1478.525
+PRD_filtered =ProductRelated_Duration[(ProductRelated_Duration>=5333.509569-(1.5*IQR)) & (ProductRelated_Duration <= 1478.525+(1.5*IQR))]
+f = plt.figure(figsize=(24, 4))
+sb.boxplot(data = PRD_filtered, orient = "h")
+
+#Dropping outliers for BounceRates
+BounceRates = pd.DataFrame(TimeSpent[[ "BounceRates"]])
+BounceRates.describe()
+IQR = 0.010526-0.003118
+BounceRates_filtered =BounceRates[(BounceRates>=0.010526-(1.5*IQR)) & (BounceRates <= 0.003118+(1.5*IQR))]
+
+#Boxplot for BounceRatesd_filtered
+f = plt.figure(figsize=(24, 4))
+sb.boxplot(data = BounceRates_filtered, orient = "h")
+
+
+
+
