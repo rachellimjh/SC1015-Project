@@ -60,5 +60,156 @@ f = plt.figure(figsize=(24, 4))
 sb.boxplot(data = BounceRates_filtered, orient = "h")
 
 
+#time period:special day
+specialDay = pd.DataFrame(osiData [['SpecialDay',"Revenue"]])
+specialDay['Special Day'] = specialDay['SpecialDay'].apply(lambda x: False if x == 0 else True)
+specialDay=specialDay.drop(['SpecialDay'], axis=1)
+# Subset the data for "Special Day" = False and count the number of True and False values in "Revenue"
+revenue_false = specialDay[specialDay['Special Day'] == False]
+revenue_false_counts = revenue_false['Revenue'].value_counts()
+revenue_true = specialDay[specialDay['Special Day'] == True]
+revenue_true_counts = revenue_true['Revenue'].value_counts()
+false_prop = revenue_false_counts[True] / len(revenue_false)
+true_prop = revenue_true_counts[True] / len(revenue_true)
+print('Proportion of "Revenue" being True for "Special Day" = False:', false_prop)
+print('Proportion of "Revenue" being True for "Special Day" = True:', true_prop)
+fig, ax = plt.subplots(figsize=(8, 6))
+ax.bar(['Special Day = False', 'Special Day = True'], [false_prop, true_prop], color=['blue', 'orange'])
+ax.set_ylabel('Proportion of Revenue')
+ax.set_ylim([0, 0.2])
+ax.set_title('Proportion of Revenue being True for Special Day')
+plt.show()
+#The lower ratio of revenue on a special day tells us that there is a larger proportion of people who purchase on a special day,
+#as compared to that during a non special day. On the other hand, on a non special day, the higher ratio means that
+#out of the total amount of people that visited the website, a smaller proportion of them chose to purchase something.
+
+#time period:weekend
+revenue_false = weekend[weekend['Weekend'] == False]
+revenue_false_counts = revenue_false['Revenue'].value_counts()
+revenue_true = weekend[weekend['Weekend'] == True]
+revenue_true_counts = revenue_true['Revenue'].value_counts()
+false_prop = revenue_false_counts[True] / len(revenue_false)
+true_prop = revenue_true_counts[True] / len(revenue_true)
+print('Proportion of "Revenue" being True for "Weekend" = False:', false_prop)
+print('Proportion of "Revenue" being True for "Weekend" = True:', true_prop)
+fig, ax = plt.subplots(figsize=(8, 6))
+ax.bar(['Weekend = False', 'Weekend = True'], [false_prop, true_prop], color=['blue', 'orange'])
+ax.set_ylabel('Proportion of Revenue')
+ax.set_ylim([0, 0.3])
+ax.set_title('Proportion of Revenue being True for Weekend')
+plt.show()
+#The lower ratio of revenue non-weekend tells us that there is a larger proportion of people who purchase on a weekday,
+#as compared to that during a weekend. On the other hand, on a weekend, the higher ratio means that
+#out of the total amount of people that visited the website, a smaller proportion of them chose to purchase something.
+#but since the difference in ratio is not that significant, weekends are not that significant in affecting whether or not a user
+#purchases something
+#so we can justify not using weekend as an indicator since it is not a strong indicator
 
 
+# Visitor Attributes: Operating System
+os_counts = []
+for i in range(1, 9):
+    os_data = VisitorAttributes[VisitorAttributes['OperatingSystems'] == i]
+    revenue_counts = os_data['Revenue'].value_counts()
+    os_counts.append(revenue_counts)
+# Calculate the proportion of True "Revenue" for each region
+#[1] because it represents true, [0] represents false
+true_proportions = []
+for counts in os_counts:
+    true_proportions.append(counts[1] / (counts[0] + counts[1]))
+fig, ax = plt.subplots(figsize=(5,5))
+ax.bar(range(1, 9), true_proportions, color='blue')
+ax.set_xlabel('Operating System')
+plt.xticks(range(1, 9))
+ax.set_ylabel('Proportion of True Revenue')
+ax.set_ylim([0, 0.3])
+ax.set_title('Proportion of True Revenue by Operating System')
+plt.show()
+#operating system of the user is rather significant as well, but we do not know what exactly each operating system stands for
+
+# Visitor Attributes: Browser
+browser_counts = []
+for i in range(1, 14):
+    browser_data = VisitorAttributes[VisitorAttributes['Browser'] == i]
+    revenue_counts = traffic_data['Revenue'].value_counts()
+    browser_counts.append(revenue_counts)
+# Calculate the proportion of True "Revenue" for each region
+#[1] because it represents true, [0] represents false
+true_proportions = []
+for counts in browser_counts:
+    true_proportions.append(counts[1] / sum(counts))
+fig, ax = plt.subplots(figsize=(5,5))
+ax.bar(range(1, 14), true_proportions, color='blue')
+ax.set_xlabel('Traffic Type')
+plt.xticks(range(1, 14))
+ax.set_ylabel('Proportion of True Revenue')
+ax.set_ylim([0, 1])
+ax.set_title('Proportion of True Revenue by Browser')
+plt.show()
+
+# Visitor Attributes: traffic_data
+traffic_counts = []
+for i in range(1, 21):
+    traffic_data = VisitorAttributes[VisitorAttributes['TrafficType'] == i]
+    revenue_counts = traffic_data['Revenue'].value_counts()
+    traffic_counts.append(revenue_counts)
+# Calculate the proportion of True "Revenue" for each region
+#[1] because it represents true, [0] represents false
+true_proportions = []
+for counts in traffic_counts:
+    if 1 in counts.index:
+        true_proportions.append(counts[1] / sum(counts))
+    else:
+        true_proportions.append(0)
+fig, ax = plt.subplots(figsize=(5,5))
+ax.bar(range(1, 21), true_proportions, color='blue')
+ax.set_xlabel('Traffic Type')
+plt.xticks(range(1, 21))
+ax.set_ylabel('Proportion of True Revenue')
+ax.set_ylim([0, 0.4])
+ax.set_title('Proportion of True Revenue by Traffic Type')
+plt.show()
+
+# Visitor Attributes: region
+region_counts = []
+for i in range(1, 10):
+    region_data = VisitorAttributes[VisitorAttributes['Region'] == i]
+    revenue_counts = region_data['Revenue'].value_counts()
+    region_counts.append(revenue_counts)
+# Calculate the proportion of True "Revenue" for each region
+#[1] because it represents true, [0] represents false
+true_proportions = []
+for counts in region_counts:
+    true_proportions.append(counts[1] / sum(counts))
+fig, ax = plt.subplots(figsize=(8, 6))
+ax.bar(range(1, 10), true_proportions, color='blue')
+ax.set_xlabel('Region')
+plt.xticks(range(1, 10))
+ax.set_ylabel('Proportion of True Revenue')
+ax.set_ylim([0, 0.2])
+ax.set_title('Proportion of True Revenue by Region')
+plt.show()
+#from here we can tell that region does not really affect the revenue (whether or not the customer chooses to buy)
+
+# Visitor Attributes:visitor type
+# Subset the data for each region and count the number of True and False values in "Revenue"
+vtype_counts = []
+for vtype in ['New_Visitor', 'Returning_Visitor', 'Other']:
+    vtype_data = VisitorAttributes[VisitorAttributes['VisitorType'] == vtype]
+    revenue_counts = vtype_data['Revenue'].value_counts()
+    vtype_counts.append(revenue_counts)
+# Calculate the proportion of True "Revenue" for each visitor type
+true_proportions = []
+for counts in vtype_counts:
+    true_proportions.append(counts[1] / sum(counts))
+# Create a bar plot of the proportion of True "Revenue" by visitor type
+fig, ax = plt.subplots(figsize=(8, 6))
+ax.bar(['New_Visitor', 'Returning_Visitor', 'Other'], true_proportions, color='blue')
+ax.set_xlabel('Visitor Type')
+ax.set_ylabel('Proportion of True Revenue')
+ax.set_ylim([0, 0.4])
+ax.set_title('Proportion of True Revenue by Visitor Type')
+plt.show()
+#the visitor type is relatively quite significant in affecting whether or not the visitor purchases something
+#new vistiors are most likely to purchases something
+#returning visitors are least likely to purchase something
