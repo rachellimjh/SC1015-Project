@@ -1,5 +1,6 @@
 # SC1015-Project
 
+### Our dataset: https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset
 ## Problem Statement: 
 ### Can we use machine learning models to predict which users are most likely to convert(purchase), based on their behaviour and attributes(eg returning type)? 
 #### 1. Time spent on the website
