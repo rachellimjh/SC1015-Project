@@ -84,6 +84,7 @@ plt.show()
 #out of the total amount of people that visited the website, a smaller proportion of them chose to purchase something.
 
 #time period:weekend
+weekend = pd.DataFrame(osiData [['Weekend',"Revenue"]])
 revenue_false = weekend[weekend['Weekend'] == False]
 revenue_false_counts = revenue_false['Revenue'].value_counts()
 revenue_true = weekend[weekend['Weekend'] == True]
