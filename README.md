@@ -1,9 +1,7 @@
 # SC1015-Project
 
-### Our dataset: https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset
+### Our dataset: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
 ## Problem Statement: 
-### Can we use machine learning models to predict which users are most likely to convert(purchase), using Revenue(True/False) as our responder, based on:  
-#### 1. Time spent on the website (Administrative Duration, Informational Duration, Product Related Duration, Bounce Rates)
-#### 2. Time period(special day/weekend/month)
-#### 3. Visitor attributes (returning type,region)
+### Predict the likelihood of a customer responding to a marketing campaign based on their historical campaign responses, purchase behaviour, and demographic attributes. Thus, we are able to better improve and design campaigns such that the likelihood of them responding to future campaigns is higher. 
+
 ### Which machine learning model is the best in predicting so?
