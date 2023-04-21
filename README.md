@@ -11,11 +11,6 @@ On top of that, we analysed which factors influence the company’s revenue thro
 Additionally, find the best machine learning model which best predicts revenue and customers' response to marketing strategies. 
 
 ### Our dataset: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
-
-## Contributors 
- 1. Rachel Lim Jia Huan - Data Extraction, Data Visualisation, Linear Regression, Clustering
- 2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
- 3. Minh - Random Forest
  
 ## Models used
 1. Linear Regression
@@ -46,6 +41,11 @@ Additionally, find the best machine learning model which best predicts revenue a
      - Grid search to refine results of randomized search 
      - Synthetic Minority Over-sampling Technique to oversample minority class in the imbalanced dataset
      - Association Rule Mining to discover relationships between variables 
+
+## Contributors 
+ 1. Rachel Lim Jia Huan - Data Extraction, Data Visualisation, Linear Regression, Clustering
+ 2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
+ 3. Minh - Random Forest
 
 ## References
 * put dataset
