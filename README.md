@@ -47,4 +47,7 @@ Additionally, find the best machine learning model which best predicts revenue a
      - Synthetic Minority Over-sampling Technique to oversample minority class in the imbalanced dataset
      - Association Rule Mining to discover relationships between variables 
 
+## References
+* put dataset
+* sckilearn 
  
