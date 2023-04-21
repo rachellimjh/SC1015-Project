@@ -16,3 +16,6 @@ Members:
  2. Rheanne Leong En Ting
  3. Min
  -----
+#** Mini-Project Description **
+
+This repository contains the Jupyter Notebook of our finalised code, Customer Pesonality Analysis dataset from Kaggle, 
