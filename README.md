@@ -17,5 +17,24 @@ This project focuses on using consumer's attributes to study their behaviour and
  2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
  3. Min - Random Forest
  
- hi
+## Models used
+1. Linear Regression
+2. Support Vector Machine
+3. Clustering
+4. Random Forest Model
+
+## Conclusion 
+* Likelihood of customers participating in the company's campaign can be predicted using clustering
+* Companies can tweak their marketing techniques to cater to families with children, earn below the mean income and spend less
+* Clustering does improve the accuracy of the data but not significant in terms of predicting response 
+
+
+## What we learnt
+* Peforming feature engineering to improve usability of data
+* Support Vector Machine
+* Clustering
+* Radnom Forest Model
+* Collaboration on GitHub
+* Concepts on scaling, kernels, Elbow method, gridsearch
+
  
