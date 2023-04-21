@@ -50,7 +50,7 @@ Additionally, find the best machine learning model which best predicts revenue a
 ## Contributors 
  1. @rachellimjh - Data Extraction, Data Visualisation, Linear Regression, Clustering
  2. @Rheanne8 - Data Extraction, Data Visualisation, Support Vector Machine
- 3. @Pham - Random Forest
+ 3. @binhminh1 - Random Forest
 
 ## References
 * https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
