@@ -1,19 +1,12 @@
-# SC1015-Project
-
-
-
-### Which machine learning model is the best in predicting so?
-
-
 # SC1015: Intro to Data Science and AI Mini Project
 
 ## Description
 This project focuses on using consumer's attributes to study their behaviour and how it affects a company's revenue and performance. This repository contains the Customer Personality Analysis dataset, our finalised code as well as the video presentation.
 
 ### Problem Statement: 
-### Utilising the chosen dataset, Customer Personality Analysis, coupled with various machine learning models, predict the likelihood of Customers responding to marketing campaigns. On top of that, we analysed which factors influence the company’s revenue through studying the relationship between consumer traits and total expenditure. This allows companies to fine tune marketing strategies and increase revenue. Additionally, find the best machine learning model which best predicts revenue and customer's response to marketing strategies. 
-
-
+### Utilising the chosen dataset, Customer Personality Analysis, coupled with various machine learning models, predict the likelihood of Customers responding to marketing campaigns.
+### On top of that, we analysed which factors influence the company’s revenue through studying the relationship between consumer traits and total expenditure. This allows companies to fine tune marketing strategies and increase revenue. 
+### Additionally, find the best machine learning model which best predicts revenue and customer's response to marketing strategies. 
 
 ### Our dataset: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
 
