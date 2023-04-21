@@ -7,14 +7,14 @@
 ### Which machine learning model is the best in predicting so?
 
 
-# SC1015: Intro to Data Science and AI Mini Project: Customer Behaviour
+# SC1015: Intro to Data Science and AI Mini Project
 
-Group:
+## Description
+This project focuses on using consumer's attributes to study their behaviour and how it affects a company's revenue and performance. This repository contains the Customer Personality Analysis dataset, our finalised code as well as the video presentation.
 
-Members: 
- 1. Rachel Lim Jia Huan 
- 2. Rheanne Leong En Ting
- 3. Min
- -----
-# Mini-Project Description
-
+## Contributors 
+ 1. Rachel Lim Jia Huan - Data Extraction, Data Visualisation, Linear Regression, Clustering
+ 2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
+ 3. Min - Random Forest
+ 
+ 
