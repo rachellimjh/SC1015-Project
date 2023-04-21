@@ -31,11 +31,20 @@ Additionally, find the best machine learning model which best predicts revenue a
 
 
 ## What we learnt
-* Peforming feature engineering to improve usability of data
-* Support Vector Machine
-* Clustering
-* Random Forest Model
 * Collaboration on GitHub
-* Concepts on scaling, kernels, Elbow method, gridsearch, association rule mining
+* Peforming feature engineering to improve usability of data
+* Using stacked bar charts to analyse influence of predictors on response variables
+* Support Vector Machine: 
+     - Uses kernel trick to find the transform data to a higher dimension to find the optimal hyperplane which linearly separates the datapoints
+     - Extreme data points of one attribute can dominate others, it is thus important to scale data before using SVM
+* K-means Clustering
+     - having too many features for clustering could become too difficult for clustering as the distance between the data points increases
+     - Using elbow method to determine optimal number of clusters
+     - Calculating silhouette score for the model to evaluae quality of clusters created by the algorithm
+* Random Forest Model
+     - Randomized search to find best hyperparameters
+     - Grid search to refine results of randomized search 
+     - Synthetic Minority Over-sampling Technique to oversample minority class in the imbalanced dataset
+     - Association Rule Mining to discover relationships between variables 
 
  
