@@ -3,6 +3,10 @@
 ## Description
 This project focuses on using consumer's attributes to study their behaviour and how it affects a company's revenue and performance. This repository contains the Customer Personality Analysis dataset, our [finalised code](https://github.com/rachellimjh/SC1015-Project/blob/dev-Rheanne/SC1015%20Mini%20Project.ipynb) as well as the video presentation.
 
+![picture alt](https://user-images.githubusercontent.com/125848730/233687564-2f2e706f-7574-4674-a3ae-e277b30f01fc.png)
+
+
+
 ### Problem Statement: 
 Utilising the chosen dataset, Customer Personality Analysis, coupled with various machine learning models, predict the likelihood of Customers responding to marketing campaigns.
 
@@ -19,10 +23,11 @@ Additionally, find the best machine learning model which best predicts revenue a
 4. Random Forest Model
 
 ## Conclusion 
-* Likelihood of customers participating in the company's campaign can be predicted using clustering
-* Companies can tweak their marketing techniques to cater to families with children, earn below the mean income and spend less
-* Clustering does improve the accuracy of the data but not significant in terms of predicting response 
-* ....
+* Based on the clustering model, companies should use marketing techniques that are able to better target groups of customers that have a family, earn lower than average, and spend less, since this cluster
+* addition of clustering labels as attributes does not seem to improve the accuracy of the prediction
+* factors that affects the company’s revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made
+* company can focus on providing a range of products that caters to both lower and higher income groups in order to raise expenditure on both ends
+* regression shows that they can focus on their catalogue and in-store purchases to further boost sales since they affect total expenditure to a greater extent as compared to web purchases
 
 
 ## What we learnt
@@ -43,11 +48,14 @@ Additionally, find the best machine learning model which best predicts revenue a
      - Association Rule Mining to discover relationships between variables 
 
 ## Contributors 
- 1. Rachel Lim Jia Huan - Data Extraction, Data Visualisation, Linear Regression, Clustering
- 2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
- 3. Minh - Random Forest
+ 1. @rachellimjh - Data Extraction, Data Visualisation, Linear Regression, Clustering
+ 2. @Rheanne8 - Data Extraction, Data Visualisation, Support Vector Machine
+ 3. @Pham - Random Forest
 
 ## References
-* put dataset
-* sckilearn 
+* https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
+* https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html
+* https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
+* https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html
+* https://scikit-learn.org/stable/modules/svm.html#kernel-functions
  
