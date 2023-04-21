@@ -16,5 +16,5 @@ Members:
  2. Rheanne Leong En Ting
  3. Min
  -----
-# ** Mini-Project Description **
+# Mini-Project Description
 
