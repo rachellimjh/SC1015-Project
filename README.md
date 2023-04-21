@@ -6,7 +6,7 @@ This project focuses on using consumer's attributes to study their behaviour and
 ### Problem Statement: 
 ### Utilising the chosen dataset, Customer Personality Analysis, coupled with various machine learning models, predict the likelihood of Customers responding to marketing campaigns.
 ### On top of that, we analysed which factors influence the company’s revenue through studying the relationship between consumer traits and total expenditure. This allows companies to fine tune marketing strategies and increase revenue. 
-### Additionally, find the best machine learning model which best predicts revenue and customer's response to marketing strategies. 
+### Additionally, find the best machine learning model which best predicts revenue and customers' response to marketing strategies. 
 
 ### Our dataset: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
 
@@ -33,6 +33,6 @@ This project focuses on using consumer's attributes to study their behaviour and
 * Clustering
 * Radnom Forest Model
 * Collaboration on GitHub
-* Concepts on scaling, kernels, Elbow method, gridsearch
+* Concepts on scaling, kernels, Elbow method, gridsearch, association rule mining
 
  
