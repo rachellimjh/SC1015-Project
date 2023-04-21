@@ -15,7 +15,7 @@ Additionally, find the best machine learning model which best predicts revenue a
 ## Contributors 
  1. Rachel Lim Jia Huan - Data Extraction, Data Visualisation, Linear Regression, Clustering
  2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
- 3. Min - Random Forest
+ 3. Minh - Random Forest
  
 ## Models used
 1. Linear Regression
