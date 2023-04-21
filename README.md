@@ -17,4 +17,5 @@ This project focuses on using consumer's attributes to study their behaviour and
  2. Rheanne Leong En Ting - Data Extraction, Data Visualisation, Support Vector Machine
  3. Min - Random Forest
  
+ hi
  
