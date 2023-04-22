@@ -18,8 +18,8 @@ Additionally, find the best machine learning model which best predicts revenue a
 ### Our dataset: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
  
 ## Models used
-1. Linear Regression
-2. Support Vector Machine
+1. Support Vector Machine
+2. Linear Regression
 3. Clustering
 4. Random Forest Model
 
