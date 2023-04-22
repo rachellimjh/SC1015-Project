@@ -24,11 +24,12 @@ Additionally, find the best machine learning model which best predicts revenue a
 4. Random Forest Model
 
 ## Conclusion 
-* Based on the clustering model, companies should use marketing techniques that are able to better target groups of customers that have a family, earn lower than average, and spend less, since this cluster
-* addition of clustering labels as attributes does not seem to improve the accuracy of the prediction
-* factors that affects the company’s revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made
+* Based on the clustering model, companies should use marketing techniques that are able to better target groups of customers that have a family, earn lower than average, and spend less
+* Addition of clustering labels as attributes does not seem to improve the accuracy of the prediction
+* Factors that affects the company’s revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made
 * company can focus on providing a range of products that caters to both lower and higher income groups in order to raise expenditure on both ends
-* regression shows that they can focus on their catalogue and in-store purchases to further boost sales since they affect total expenditure to a greater extent as compared to web purchases
+* Regression shows that they can focus on their catalogue and in-store purchases to further boost sales since they affect total expenditure to a greater extent as compared to web purchases
+* From using Support Vector Machines, the relatively higher classification accuracy of the polynomial kernel suggests that the relationships between predictor and variable may not be so straightforward(complex, non-linear relationship)
 
 
 ## What we learnt
@@ -36,10 +37,11 @@ Additionally, find the best machine learning model which best predicts revenue a
 * Peforming feature engineering to improve usability of data
 * Using stacked bar charts to analyse influence of predictors on response variables
 * Support Vector Machine: 
-     - Uses kernel trick to find the transform data to a higher dimension to find the optimal hyperplane which linearly separates the datapoints
+     - Uses kernel trick to transform data to a higher dimension to find the optimal hyperplane which separates the datapoints
+     - The classification accuracy of each kernel trick can also indicate the kind of relationship between attributes and response(linear, complex, non-linear)
      - Extreme data points of one attribute can dominate others, it is thus important to scale data before using SVM
 * K-means Clustering
-     - having too many features for clustering could become too difficult for clustering as the distance between the data points increases
+     - Having too many features for clustering could become too difficult for clustering as the distance between the data points increases
      - Using elbow method to determine optimal number of clusters
      - Calculating silhouette score for the model to evaluae quality of clusters created by the algorithm
 * Random Forest Model
