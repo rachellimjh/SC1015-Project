@@ -3,7 +3,8 @@
 ## Description
 This project focuses on using consumer's attributes to study their behaviour and how it affects a company's revenue and performance. This repository contains the Customer Personality Analysis dataset, our [finalised code](https://github.com/rachellimjh/SC1015-Project/blob/dev-Rheanne/SC1015%20Mini%20Project.ipynb), [our video presentation](xxlink to youtubexx) and [presentation slides](https://docs.google.com/presentation/d/1V_O93jwCH7PgBfjQjZVZRz-8-6U-Xy1T1Y123nR3gIc/edit?usp=sharing)
 
-![picture alt](https://user-images.githubusercontent.com/125848730/233687564-2f2e706f-7574-4674-a3ae-e277b30f01fc.png)
+
+![SC1015 Slides (1)](https://user-images.githubusercontent.com/125848730/233756231-5fa24fbc-6215-44e8-9724-d1af482e2d55.png)
 
 
 
