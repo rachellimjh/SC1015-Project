@@ -23,7 +23,7 @@ On top of that, we analysed which factors influence the company’s revenue thro
 
 ## Conclusion 
 
-### The likelihood of customers responding to marketing campaigns can be predicted by our machine learning models K-means clustering, random forest classifier, and support vector machine. 
+#### The likelihood of customers responding to marketing campaigns can be predicted by our machine learning models K-means clustering, random forest classifier, and support vector machine. 
 * Based on the K-means clustering model, companies should use marketing techniques that are able to better target groups of customers that have a family, earn lower than average, and spend less
 * Addition of clustering labels as attributes does not seem to improve the accuracy of the prediction
 * From the random forest classifier, the company should prioritise Income first from these characteristics as it has an extremely higher importance score. Moreover, with regard to the products feature, the company should focus more on marketing and advertising Wines, Meat Products and Gold Products, since they have higher importance scores in influencing a customer's participation in a campaign.
@@ -31,7 +31,7 @@ On top of that, we analysed which factors influence the company’s revenue thro
 * From using support vector machines, since the attributes of Places give us the highest classification accuracy, a recommended approach for the company to take is to focus their marketing and publicity on trying to attract customers from different platforms and sources, in order to boost their response in these campaigns.
 * However, from using Support Vector Machines, the relatively higher classification accuracy of the polynomial kernel suggests that the relationships between predictor and variable may not be so straightforward(complex, non-linear relationship)
 
-### The most important factors influencing the company's overall revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made, based on our machine learning model: Multivariate Linear Regression.
+#### The most important factors influencing the company's overall revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made, based on our machine learning model: Multivariate Linear Regression.
 * Factors that affects the company’s revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made
 * The company can focus on providing a range of products that caters to both lower and higher income groups in order to raise expenditure on both ends
 * Regression shows that they can focus on their catalogue and in-store purchases to further boost sales since they affect total expenditure to a greater extent as compared to web purchases
