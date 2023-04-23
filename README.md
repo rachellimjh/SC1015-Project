@@ -27,7 +27,7 @@ Additionally, find the best machine learning model which best predicts revenue a
 * Based on the clustering model, companies should use marketing techniques that are able to better target groups of customers that have a family, earn lower than average, and spend less
 * Addition of clustering labels as attributes does not seem to improve the accuracy of the prediction
 * Factors that affects the company’s revenue are the customer’s income, Number of Catalog Purchases made, and the Number of Store Purchases made
-* company can focus on providing a range of products that caters to both lower and higher income groups in order to raise expenditure on both ends
+* The company can focus on providing a range of products that caters to both lower and higher income groups in order to raise expenditure on both ends
 * Regression shows that they can focus on their catalogue and in-store purchases to further boost sales since they affect total expenditure to a greater extent as compared to web purchases
 * From using Support Vector Machines, the relatively higher classification accuracy of the polynomial kernel suggests that the relationships between predictor and variable may not be so straightforward(complex, non-linear relationship)
 
